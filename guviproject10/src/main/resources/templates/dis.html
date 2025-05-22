@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>dispaly employee</title>
+</head>
+<body>
+<table border="1">
+<thead>
+<tr>
+    <th>Employee Id</th>
+    <th>Employee Name</th>
+    <th>Employee Email</th>
+    <th>Employee Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td th:text="${employee.EmployeeId}"></td>
+    <td th:text="${employee.EmployeeName}"></td>
+    <td th:text="${employee.EmployeeEmail}"></td>
+    <td th:text="${employee.EmployeeLocation}"></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
